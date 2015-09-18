@@ -2,17 +2,16 @@
  * Created by beapen on 15-09-13.
  */
 
-import org.scalatest.FlatSpec
+import org.scalatest.FunSuite
 
-class TestAllergy extends FlatSpec {
 
-  behavior of "An empty Set"
+class TestAllergy extends FunSuite {
 
-  it should "have size 0" in {
-    assert(Set.empty.size === 1)
+  test("Allergy should return records") {
+     assert(Allergy.getAllergyUHN > 1)
   }
 
-  it should "produce NoSuchElementException when head is invoked" in {
+  test("Invoking head on an empty Set should produce NoSuchElementException") {
     intercept[NoSuchElementException] {
       Set.empty.head
     }
