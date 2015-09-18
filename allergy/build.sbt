@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
   "ca.uhn.hapi.fhir" % "hapi-fhir-structures-hl7org-dstu2" % "1.2-SNAPSHOT",
   "ca.uhn.hapi.fhir" % "hapi-fhir-validation-resources-dstu2" % "1.2-SNAPSHOT",
   "org.slf4j" % "slf4j-api" % "1.7.5",
-  "org.slf4j" % "slf4j-simple" % "1.6.4"
+  "org.slf4j" % "slf4j-simple" % "1.6.4",
+  "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 )
 
 //Adding sonatype resolver
