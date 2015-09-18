@@ -8,7 +8,13 @@ import ca.uhn.fhir.context.FhirContext
 import ca.uhn.fhir.model.dstu2.resource.AllergyIntolerance
 
 object Allergy {
+
   def main(args: Array[String]): Unit = {
+
+    getAllergyUHN
+  }
+
+  def getAllergyUHN: Int = {
 
     // We're connecting to a DSTU2 compliant test server at UHN
     val ctx = FhirContext.forDstu2()
@@ -30,7 +36,8 @@ object Allergy {
       println((i+1).toString + ": " + allergy.getCategory() + " Type: " + allergy.getType() +
         " Status: " + allergy.getStatus())
     }
-
+    //Return
+    results.size()
   }
 
 }
