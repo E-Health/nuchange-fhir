@@ -1,0 +1,16 @@
+language: scala
+scala:
+   - 2.10.4
+   - 2.11.7
+branches:
+  only:
+    - master
+notifications:
+  email:
+    recipients:
+      - github_public@dermatologist.co.in
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+before_install:
+  - cd allergy
